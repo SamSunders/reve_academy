@@ -32,7 +32,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //Mongo Setup
-var mongoURI = "mongodb://localhost:27017/reve_test";
+var mongoURI = "mongodb://samReve:samreveDB@ds045644.mongolab.com:45644/reve_academy";
 var MongoDB = mongoose.connect(mongoURI).connection;
 
 MongoDB.on('error', function(err){
